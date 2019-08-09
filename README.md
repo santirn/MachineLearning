@@ -1,7 +1,7 @@
 # Machine Learning
 Mi primer contacto con Machine Learning
 
-### A través de este Git voy a enseñaros mi primer programa en mi introducción al Machine Learning. Es un ejemplo muy básico para empezar a entender conceptos.
+### A través de este Git voy a enseñaros mi primer programa en mi introducción al Machine Learning. Es un ejemplo muy BÁSICO para empezar a entender conceptos.
 
 
 Nuestro programa buscara patrones entre los datos introducidos, para ello usaremos Tree Classifier y lo alimentaremos con nuestros datos de prueba.
@@ -69,11 +69,34 @@ Pasaremos los datos 150g y rugosa (0). Si nos paramos a pensar y los comparamos 
 ````python
 print(clf.predict([[150, 0]]))
 ````
+#### Salida por consola del programa:
 ````console
 [1]
 ````
 
+El clasificador devuelve el resultado correcto. Ha reconocido los patrones en los datos introducidos y ha sido capaz de predecir que fruta es con esas características.
 
 
+Código completo.
+````python
+# Importamos la librería de Machine Learning
+from sklearn import tree
+
+# features serán los datos(características) de entrada para el clasificador
+features = [[140, 1], [130, 1], [150, 0], [170, 0]]
+
+# labels será resultado esperado
+labels = [0, 0, 1, 1]
+
+# creamos el clasificador
+clf = tree.DecisionTreeClassifier()
+
+# lo "alimentamos" con las caracteristicas y el resultado esperado.
+# fit buscara patrones entre los datos
+clf = clf.fit(features, labels)
+
+
+print(clf.predict([[150, 0]]))
+````
 
 
