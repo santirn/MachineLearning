@@ -1,7 +1,7 @@
 # Machine Learning
 Mi primer contacto con Machine Learning
 
-### A través de este Git voy a enseñaros mi primer programa en mi introducción al Machine Learning. Es un ejemplo muy BÁSICO para empezar a entender conceptos.
+### A través de este Git voy a enseñaros mi introducción al Machine Learning. Es un ejemplo muy BÁSICO para empezar a entender conceptos.
 
 
 Nuestro programa buscara patrones entre los datos introducidos, para ello usaremos Tree Classifier y lo alimentaremos con nuestros datos de prueba.
